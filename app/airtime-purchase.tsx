@@ -103,7 +103,7 @@ export default function AirtimePurchaseScreen() {
                 <View style={styles.statIconContainer}>
                   <Zap size={24} color={Theme.Colors.primary} />
                 </View>
-                <Text style={styles.statValue}>  SCR {totalAmount.toFixed(2)}</Text>
+                <Text style={styles.statValue}>       SCR {totalAmount.toFixed(2)}</Text>
                 <Text style={styles.statLabel}>Total Received</Text>
               </View>
               
