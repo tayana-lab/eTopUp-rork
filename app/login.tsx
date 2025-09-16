@@ -934,8 +934,8 @@ welcomeSection: {
 
 pinInput: {
   flex: 1,
-  fontSize: Typography.fontSize.xl,
-  letterSpacing: 4,
+  //fontSize: Typography.fontSize.xl,
+  //letterSpacing: 4,
   textAlign: 'center',
   paddingVertical: 12,
 },
