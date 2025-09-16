@@ -172,7 +172,7 @@ export default function DashboardScreen() {
       case 'zap':
         return Zap;
       case 'sim':
-        return Smartphone;
+        return CardSim;
       case 'warehouse':
         return Warehouse;
       case 'clipboardlist':
