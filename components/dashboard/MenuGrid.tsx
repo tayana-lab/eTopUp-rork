@@ -18,7 +18,8 @@ import {
   DollarSign,
   Zap,
   Warehouse,
-  ClipboardList
+  ClipboardList,
+  CardSim
 } from 'lucide-react-native';
 import { Theme } from '@/constants/theme';
 import { AppConfig } from '@/constants/config';
