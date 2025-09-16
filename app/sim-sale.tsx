@@ -329,12 +329,7 @@ export default function SimSaleScreen() {
           {customerTypes.map((customerType, index) => renderCustomerTypeCard(customerType, index, dynamicStyles))}
         </View>
         
-        <View style={[styles.footerSection, dynamicStyles.footerSection]}>
-          <View style={styles.footerContent}>
-            <Star size={isTablet ? 20 : 16} color={colors.primary} />
-            <Text style={[styles.footerText, dynamicStyles.footerText]}>Tap to start your onboarding experience</Text>
-          </View>
-        </View>
+      
       </Animated.View>
             </BackgroundImage>
       </StandardLayout>
