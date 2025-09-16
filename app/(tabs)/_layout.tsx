@@ -61,7 +61,7 @@ export default function TabLayout() {
         name="my-wallet"
         options={{
           title: "My Wallets",
-          tabBarLabel: ({ focused }) => <TabLabel title="My Wallet" focused={focused} />,
+          tabBarLabel: ({ focused }) => <TabLabel title="My Wallets" focused={focused} />,
           tabBarIcon: ({ color, size }) => <Wallet color={color} size={20} />,
         }}
       />
