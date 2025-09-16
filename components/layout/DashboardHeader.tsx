@@ -63,7 +63,7 @@ export default function DashboardHeader({
         
         <TouchableOpacity
           style={styles.profileSection}
-          onPress={onProfilePress}
+          //onPress={onProfilePress}
           activeOpacity={0.7}
         >
           <View style={styles.profileImageContainer}>
