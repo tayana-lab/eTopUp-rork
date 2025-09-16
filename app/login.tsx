@@ -944,7 +944,7 @@ pinInput: {
   pinToggleButton: {
     position: 'absolute',
     right: 16,
-    top: 10,
+    top: -10,
     bottom: 0,
     zIndex: 1,
     justifyContent: 'center',
