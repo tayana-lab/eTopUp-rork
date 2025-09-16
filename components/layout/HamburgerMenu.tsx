@@ -176,9 +176,7 @@ export default function HamburgerMenu({
               icon={Palette}
               title="Themes"
               onPress={handleThemes}
-              rightElement={
-             <></>
-              }
+              
             />
           </View>
 
