@@ -931,13 +931,16 @@ welcomeSection: {
     position: 'relative',
     alignSelf: 'stretch',
   },
-  pinInput: {
-    paddingRight: 50,
-    textAlign: 'center',
-    fontSize: Typography.fontSize.xl,
-    letterSpacing: 4,
-    alignSelf: 'stretch',
-  },
+
+pinInput: {
+  flex: 1,
+  fontSize: Typography.fontSize.xl,
+  letterSpacing: 4,
+  textAlign: 'center',
+  paddingVertical: 12,
+},
+
+
   pinToggleButton: {
     position: 'absolute',
     right: 16,
