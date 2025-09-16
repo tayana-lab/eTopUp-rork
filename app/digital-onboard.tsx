@@ -1939,19 +1939,53 @@ const styles = StyleSheet.create({
     borderColor: Theme.Colors.borderLight,
     position: 'relative',
     marginBottom: Theme.Spacing.xs,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 0,
+        borderWidth: 0.5,
+        borderColor: 'rgba(0,0,0,0.08)',
+      },
+    }),
   },
   packageCardCompactSelected: {
     borderColor: Theme.Colors.primary,
     backgroundColor: Theme.Colors.primary + '08',
-    shadowColor: Theme.Colors.primary,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.15,
-    shadowRadius: 8,
-    elevation: 4,
+    ...Platform.select({
+      ios: {
+        shadowColor: Theme.Colors.primary,
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.15,
+        shadowRadius: 8,
+      },
+      android: {
+        elevation: 0,
+        borderWidth: 1,
+        borderColor: Theme.Colors.primary,
+      },
+    }),
   },
   packageCardCompactPopular: {
     borderColor: Theme.Colors.warning,
     backgroundColor: Theme.Colors.warning + '05',
+    ...Platform.select({
+      ios: {
+        shadowColor: Theme.Colors.warning,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 0,
+        borderWidth: 0.5,
+        borderColor: Theme.Colors.warning,
+      },
+    }),
   },
   popularBadgeCompact: {
     position: 'absolute',
