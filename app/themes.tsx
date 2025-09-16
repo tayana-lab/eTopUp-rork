@@ -132,7 +132,7 @@ export default function ThemesScreen() {
       />
       
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        {/* Dark Mode Toggle */}
+        {/* Dark Mode Toggle 
         <View style={styles.section}>
           <View style={styles.toggleItem}>
             <View style={styles.toggleLeft}>
@@ -146,7 +146,7 @@ export default function ThemesScreen() {
               thumbColor={colorScheme === 'dark' ? colors.white : colors.gray400}
             />
           </View>
-        </View>
+        </View> */}
 
         {/* Theme Selection */}
         <View style={styles.section}>
