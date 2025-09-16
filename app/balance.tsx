@@ -48,7 +48,7 @@ const mockTransactionData: { [key: string]: BalanceTransaction[] } = {
     },
     {
       id: '2',
-      date: '2024-09-17',
+      date: '2025-09-17',
       time: '11:45:12',
       type: 'debit',
       amount: 200.00,
@@ -88,7 +88,7 @@ const mockTransactionData: { [key: string]: BalanceTransaction[] } = {
   '3': [
     {
       id: '6',
-      date: '2024-09-13',
+      date: '2025-09-13',
       time: '15:45:30',
       type: 'credit',
       amount: 100.00,
@@ -99,7 +99,7 @@ const mockTransactionData: { [key: string]: BalanceTransaction[] } = {
   '4': [
     {
       id: '7',
-      date: '2024-09-12',
+      date: '2025-09-12',
       time: '12:15:20',
       type: 'credit',
       amount: 2500.00,
@@ -108,7 +108,7 @@ const mockTransactionData: { [key: string]: BalanceTransaction[] } = {
     },
     {
       id: '8',
-      date: '2024-09-11',
+      date: '2025-09-11',
       time: '09:30:10',
       type: 'debit',
       amount: 1000.00,
