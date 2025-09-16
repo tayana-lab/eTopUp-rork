@@ -177,15 +177,7 @@ export default function HamburgerMenu({
               title="Themes"
               onPress={handleThemes}
               rightElement={
-                <View style={styles.themeToggle}>
-                  <Text style={styles.themeText}>Dark</Text>
-                  <Switch
-                    value={isDarkMode}
-                    onValueChange={setIsDarkMode}
-                    trackColor={{ false: Theme.Colors.gray300, true: Theme.Colors.primary }}
-                    thumbColor={isDarkMode ? Theme.Colors.white : Theme.Colors.gray400}
-                  />
-                </View>
+             <></>
               }
             />
           </View>
