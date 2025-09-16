@@ -15,7 +15,8 @@ import {
   DollarSign,
   Zap,
   Warehouse,
-  ClipboardList
+  ClipboardList,
+  CardSim
 } from 'lucide-react-native';
 import { router } from 'expo-router';
 
