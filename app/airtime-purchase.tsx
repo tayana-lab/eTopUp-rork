@@ -22,35 +22,35 @@ interface AirtimePurchaseItem {
 const mockAirtimeData: AirtimePurchaseItem[] = [
   {
     id: '1',
-    date: '2024-01-15',
+    date: '2025-09-18',
     time: '14:30:25',
     amount: 2500.00,
     operator: 'Cable & Wireless',
   },
   {
     id: '2',
-    date: '2024-01-14',
+    date: '2025-09-17',
     time: '11:45:12',
     amount: 1800.00,
     operator: 'Cable & Wireless',
   },
   {
     id: '3',
-    date: '2024-01-13',
+    date: '2025-09-16',
     time: '16:20:08',
     amount: 3200.00,
     operator: 'Cable & Wireless',
   },
   {
     id: '4',
-    date: '2024-01-12',
+    date: '2025-09-15',
     time: '09:15:33',
     amount: 1500.00,
     operator: 'Cable & Wireless',
   },
   {
     id: '5',
-    date: '2024-01-11',
+    date: '2025-09-14',
     time: '13:55:47',
     amount: 4000.00,
     operator: 'Cable & Wireless',
@@ -103,7 +103,7 @@ export default function AirtimePurchaseScreen() {
                 <View style={styles.statIconContainer}>
                   <Zap size={24} color={Theme.Colors.primary} />
                 </View>
-                <Text style={styles.statValue}>SCR {totalAmount.toFixed(2)}</Text>
+                <Text style={styles.statValue}>  SCR {totalAmount.toFixed(2)}</Text>
                 <Text style={styles.statLabel}>Total Received</Text>
               </View>
               
