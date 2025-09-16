@@ -11,9 +11,9 @@ const BaseColors = {
   },
   // Royal Purple theme colors
   purple: {
-    primary: '#663399',
-    primaryDark: '#552288',
-    primaryLight: '#7B68EE',
+    primary: '#6366F1',
+    primaryDark: '#4F46E5',
+    primaryLight: '#8B5CF6',
     secondary: '#10B981',
     secondaryDark: '#059669',
     accent: '#F59E0B',
