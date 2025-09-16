@@ -311,7 +311,7 @@ export default function SimSaleScreen() {
   return (
     
     <StandardLayout 
-      title="SIM Inventory" 
+      title="SIM Sale" 
 
     >
       <BackgroundImage style={styles.container}>
