@@ -575,7 +575,7 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
-    backgroundColor:'#0584dc',
+    //backgroundColor:'#0584dc',
   },
   keyboardAvoidingView: {
     flex: 1,
