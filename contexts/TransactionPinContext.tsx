@@ -57,7 +57,7 @@ export const [TransactionPinProvider, useTransactionPin] = createContextHook(() 
 
   useEffect(() => {
     initializeTransactionPin();
-  }, [initializeTransactionPin]);
+  }, []);
 
   const enableTransactionPin = useCallback(async (pin: string): Promise<boolean> => {
     const sanitizedPin = pin?.trim();
