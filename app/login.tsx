@@ -354,6 +354,8 @@ export default function LoginScreen() {
 
   return (
     <BackgroundImage style={styles.container}>
+      0584dc
+      
       <SafeAreaView style={styles.safeArea}>
         <KeyboardAvoidingView 
           style={styles.keyboardAvoidingView}
