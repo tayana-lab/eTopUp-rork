@@ -93,7 +93,7 @@ export default function ReportsScreen() {
       case 'credit-card':
         return CreditCard;
       case 'smartphone':
-        return Smartphone;
+        return CardSim;
       case 'zap':
         return Zap;
       case 'piggy-bank':
