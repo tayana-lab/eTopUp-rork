@@ -68,7 +68,7 @@ export default function MenuGrid({
       case 'warehouse':
         return Warehouse;
       case 'sim':
-        return Candy;
+        return CardSim;
       case 'clipboardlist':
         return ClipboardList;
       default:
