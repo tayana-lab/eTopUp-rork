@@ -384,13 +384,15 @@ export default function LoginScreen() {
                 </View>
               </View>
 
-              <View style={styles.brandingInline}>
-                <View style={styles.logoBadge}>
-                  <Box size={28} color={Colors.white} />
-                </View>
-                <Text style={styles.brandTitle}>ETopUp</Text>
+              <View style={styles.logoContainer}>
+                <Image
+                  source={{ uri: 'https://unomessaging.tayana.in/images/cws-logo.png' }}
+                  style={styles.logoImage}
+                  resizeMode="contain"
+                />
               </View>
-              <Text style={styles.brandTagline}>Your Quick Top-Up Solution</Text>
+              <Text style={styles.brandTitle}>ETopUp</Text>
+              <Text style={styles.brandTagline}>Your Quick Top-Up Solutions</Text>
             </View>
           </LinearGradient>
 
@@ -466,7 +468,7 @@ export default function LoginScreen() {
       onPress={handlePinLogin}
       loading={isSubmitting}
       disabled={pin.length !== AppConfig.auth.pinLength}
-      style={{ marginTop: Spacing.md }}
+      style={styles.pinLoginButton}
       testID="pin-login-button"
     />
 
@@ -629,25 +631,20 @@ const styles = StyleSheet.create({
   dotActive: {
     backgroundColor: Colors.white,
   },
-  brandingInline: {
-    flexDirection: 'row',
+  logoContainer: {
     alignItems: 'center',
-    gap: 8,
-    marginBottom: 6,
+    marginBottom: 12,
   },
-  logoBadge: {
-    width: 48,
-    height: 48,
-    borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.15)',
-    justifyContent: 'center',
-    alignItems: 'center',
-    ...Shadows.sm,
+  logoImage: {
+    width: 200,
+    height: 40,
   },
   brandTitle: {
     color: Colors.white,
     fontSize: Typography.fontSize.xl,
     fontWeight: Typography.fontWeight.bold,
+    marginBottom: 6,
+    textAlign: 'center',
   },
   brandTagline: {
     color: Colors.white,
@@ -892,6 +889,9 @@ welcomeSection: {
   },
   pinButton: {
     alignSelf: 'stretch',
+    marginTop: Spacing.md,
+  },
+  pinLoginButton: {
     marginTop: Spacing.md,
   },
   

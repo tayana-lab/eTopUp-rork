@@ -287,7 +287,19 @@ const styles = StyleSheet.create({
     padding: Theme.Spacing.xl,
     width: '100%',
     maxWidth: 400,
-    ...Theme.Shadows.lg,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.15,
+        shadowRadius: 8,
+      },
+      android: {
+        elevation: 0,
+        borderWidth: 0.5,
+        borderColor: 'rgba(0,0,0,0.08)',
+      },
+    }),
   },
   header: {
     flexDirection: 'row',
@@ -373,6 +385,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     letterSpacing: 8,
     color: Theme.Colors.textPrimary,
+    ...Platform.select({
+      android: {
+        borderColor: 'rgba(0,0,0,0.12)',
+      },
+    }),
   },
   attemptsText: {
     fontSize: Theme.Typography.fontSize.sm,
