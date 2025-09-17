@@ -355,7 +355,7 @@ export default function LoginScreen() {
 
   return (
     <BackgroundImage style={styles.container}>
-      
+       <View style={styles.topSafeArea} />
        <StatusBar backgroundColor="#0584dc" barStyle="light-content" />
       <SafeAreaView style={styles.safeArea}>
         <KeyboardAvoidingView 
