@@ -1,18 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'expo-router';
 import { View, StyleSheet } from 'react-native';
 import { useAuth } from '@/contexts/AuthContext';
+import SplashScreen from '@/components/ui/SplashScreen';
 import Loader from '@/components/ui/Loader';
 
 export default function IndexScreen() {
   const { isAuthenticated, isLoading } = useAuth();
   const router = useRouter();
+  const [showSplash, setShowSplash] = useState<boolean>(true);
 
-  console.log('IndexScreen rendered', { isAuthenticated, isLoading });
+  console.log('IndexScreen rendered', { isAuthenticated, isLoading, showSplash });
+
+  const handleSplashFinish = () => {
+    console.log('Splash screen finished');
+    setShowSplash(false);
+  };
 
   useEffect(() => {
-    console.log('IndexScreen useEffect', { isAuthenticated, isLoading });
-    if (!isLoading) {
+    console.log('IndexScreen useEffect', { isAuthenticated, isLoading, showSplash });
+    if (!showSplash && !isLoading) {
       if (isAuthenticated) {
         console.log('User is authenticated, navigating to dashboard');
         router.replace('/(tabs)/dashboard');
@@ -21,23 +28,29 @@ export default function IndexScreen() {
         router.replace('/login');
       }
     }
-  }, [isAuthenticated, isLoading, router]);
+  }, [isAuthenticated, isLoading, showSplash, router]);
 
   // Add a timeout to force navigation if stuck
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      if (!isLoading) {
-        console.log('Timeout reached, forcing navigation based on auth state:', { isAuthenticated });
-        if (isAuthenticated) {
-          router.replace('/(tabs)/dashboard');
-        } else {
-          router.replace('/login');
+    if (!showSplash) {
+      const timeout = setTimeout(() => {
+        if (!isLoading) {
+          console.log('Timeout reached, forcing navigation based on auth state:', { isAuthenticated });
+          if (isAuthenticated) {
+            router.replace('/(tabs)/dashboard');
+          } else {
+            router.replace('/login');
+          }
         }
-      }
-    }, 3000); // 3 second timeout
+      }, 3000); // 3 second timeout
 
-    return () => clearTimeout(timeout);
-  }, [isAuthenticated, isLoading, router]);
+      return () => clearTimeout(timeout);
+    }
+  }, [isAuthenticated, isLoading, showSplash, router]);
+
+  if (showSplash) {
+    return <SplashScreen onFinish={handleSplashFinish} />;
+  }
 
   return (
     <View style={styles.container}>
