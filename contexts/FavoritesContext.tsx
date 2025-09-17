@@ -86,7 +86,7 @@ export const [FavoritesProvider, useFavorites] = createContextHook(() => {
   // Load favorites from storage on initialization
   useEffect(() => {
     loadFavorites();
-  }, [loadFavorites]);
+  }, []);
 
   return useMemo(() => ({
     favorites,

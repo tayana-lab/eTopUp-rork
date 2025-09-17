@@ -19,7 +19,7 @@ import {
   Zap,
   Warehouse,
   ClipboardList,
-  CardSim
+  Candy
 } from 'lucide-react-native';
 import { Theme } from '@/constants/theme';
 import { AppConfig } from '@/constants/config';
@@ -68,9 +68,9 @@ export default function MenuGrid({
       case 'warehouse':
         return Warehouse;
       case 'sim':
-        return CardSim;
+        return Candy;
       case 'clipboardlist':
-        return ClipboardList     
+        return ClipboardList;
       default:
         return Smartphone;
     }

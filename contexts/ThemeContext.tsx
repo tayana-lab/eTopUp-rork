@@ -79,7 +79,7 @@ export const [ThemeProvider, useTheme] = createContextHook(() => {
   // Load theme from storage on app start
   useEffect(() => {
     loadTheme();
-  }, [loadTheme]);
+  }, []);
 
   const colors = useMemo(() => getColors(colorScheme, currentTheme), [colorScheme, currentTheme]);
   const theme = useMemo(() => getTheme(colorScheme, currentTheme), [colorScheme, currentTheme]);

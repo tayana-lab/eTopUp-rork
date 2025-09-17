@@ -210,7 +210,7 @@ export const [AuthProvider, useAuth] = createContextHook(() => {
   // Initialize auth state
   useEffect(() => {
     initializeAuth();
-  }, [initializeAuth]);
+  }, []);
 
   // Auto-clear lockout when time expires
   useEffect(() => {
