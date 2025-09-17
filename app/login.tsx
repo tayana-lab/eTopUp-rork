@@ -357,7 +357,7 @@ export default function LoginScreen() {
     <BackgroundImage style={styles.container}>
       
        <StatusBar barStyle="light-content" />
-       <SafeAreaView  style={[{ backgroundColor: colors.primary }]} edges={['top']} />
+       <SafeAreaView  style={[{ backgroundColor: Colors.primary }]} edges={['top']} />
       
    <SafeAreaView style={styles.safeArea} edges={['left', 'right', 'bottom']}>
         <KeyboardAvoidingView 
