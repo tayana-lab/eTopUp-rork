@@ -5,7 +5,7 @@ import {
   StyleSheet,
   ScrollView,
 } from 'react-native';
-import { Smartphone, Plus, Minus, AlertTriangle, Package } from 'lucide-react-native';
+import { Smartphone, Plus, Minus, AlertTriangle, Package,CardSim } from 'lucide-react-native';
 import { Stack } from 'expo-router';
 import { Theme } from '@/constants/theme';
 import BackgroundImage from '@/components/ui/BackgroundImage';
@@ -23,7 +23,7 @@ interface StockItem {
 const mockStockData: StockItem[] = [
   {
     id: '1',
-    date: '2024-01-15',
+    date: '2025-09-18',
     time: '14:30:25',
     type: 'addition',
     quantity: 50,
@@ -31,7 +31,7 @@ const mockStockData: StockItem[] = [
   },
   {
     id: '2',
-    date: '2024-01-14',
+    date: '2024-09-17',
     time: '11:45:12',
     type: 'sale',
     quantity: 5,
@@ -39,7 +39,7 @@ const mockStockData: StockItem[] = [
   },
   {
     id: '3',
-    date: '2024-01-13',
+    date: '2024-09-16',
     time: '16:20:08',
     type: 'damaged',
     quantity: 2,
@@ -47,7 +47,7 @@ const mockStockData: StockItem[] = [
   },
   {
     id: '4',
-    date: '2024-01-12',
+    date: '2024-09-15',
     time: '09:15:33',
     type: 'sale',
     quantity: 8,
@@ -55,7 +55,7 @@ const mockStockData: StockItem[] = [
   },
   {
     id: '5',
-    date: '2024-01-11',
+    date: '2024-09-14',
     time: '13:55:47',
     type: 'addition',
     quantity: 25,
