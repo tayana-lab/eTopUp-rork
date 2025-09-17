@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Alert,
 } from 'react-native';
-import { BarChart3, Download, Filter, TrendingUp, TrendingDown, DollarSign, CreditCard, Smartphone, Zap, PiggyBank } from 'lucide-react-native';
+import { BarChart3, Download, Filter, TrendingUp, TrendingDown, DollarSign, CreditCard, Smartphone, Zap, PiggyBank ,CardSim} from 'lucide-react-native';
 import { Theme } from '@/constants/theme';
 import BackgroundImage from '@/components/ui/BackgroundImage';
 import StandardLayout from '@/components/layout/StandardLayout';
