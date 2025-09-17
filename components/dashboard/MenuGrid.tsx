@@ -19,7 +19,7 @@ import {
   Zap,
   Warehouse,
   ClipboardList,
-  Candy
+  CardSim
 } from 'lucide-react-native';
 import { Theme } from '@/constants/theme';
 import { AppConfig } from '@/constants/config';
