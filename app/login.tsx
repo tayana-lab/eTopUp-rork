@@ -636,7 +636,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   logoImage: {
-    width: 200,
+    width: 300,
     height: 40,
   },
   brandTitle: {
