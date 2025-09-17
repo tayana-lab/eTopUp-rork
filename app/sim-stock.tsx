@@ -150,7 +150,7 @@ export default function SimStockScreen() {
             <View style={styles.statsOverview}>
               <View style={styles.statCard}>
                 <View style={styles.statIconContainer}>
-                  <Smartphone size={24} color={Theme.Colors.primary} />
+                  <CardSim size={24} color={Theme.Colors.primary} />
                 </View>
                 <Text style={styles.statValue}>{currentStock}</Text>
                 <Text style={styles.statLabel}>Current Stock</Text>
