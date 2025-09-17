@@ -580,7 +580,6 @@ const styles = StyleSheet.create({
     //backgroundColor:'#0584dc',
   },
     topSafeArea: {
-    height: StatusBar.currentHeight || 0,
     backgroundColor: '#007BFF', // Your blue color
   },
   keyboardAvoidingView: {
