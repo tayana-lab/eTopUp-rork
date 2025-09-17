@@ -633,11 +633,11 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    marginBottom: 12,
+    //marginBottom: 12,
   },
   logoImage: {
     width: 300,
-    height: 40,
+    height: 60,
   },
   brandTitle: {
     color: Colors.white,
