@@ -32,9 +32,6 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
           style={styles.logo}
           resizeMode="contain"
         />
-        <Text style={[styles.text, { color: colors.textInverse }]}>
-          Welcome to CWS
-        </Text>
       </View>
     </SafeAreaView>
   );
